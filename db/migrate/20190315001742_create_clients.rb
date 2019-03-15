@@ -4,6 +4,7 @@ class CreateClients < ActiveRecord::Migration[5.2]
       t.string :name
       t.string :bio
       t.boolean :unreliable
+      t.references :user
 
       t.timestamps
     end
